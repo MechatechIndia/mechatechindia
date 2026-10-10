@@ -6,20 +6,64 @@
     <title>MechaTech India</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        header { background-color: #1a252f; color: white; text-align: center; padding: 2rem 1rem; }
-        .container { width: 80%; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { margin: 0; font-size: 2.5rem; }
-        p { line-height: 1.6; }
-        .services { display: flex; gap: 1rem; margin-top: 1.5rem; }
-        .card { background: #eef2f5; padding: 1rem; border-radius: 5px; flex: 1; text-align: center; }
+        
+        /* Header & Logo */
+        header { 
+            background-color: #1a252f; 
+            color: white; 
+            padding: 1.5rem 1rem; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        header img { 
+            height: 60px; 
+            width: auto; 
+            border-radius: 5px; 
+        }
+        header .title-text { text-align: left; }
+        header h1 { margin: 0; font-size: 2rem; }
+        header p { margin: 5px 0 0 0; color: #f39c12; font-weight: bold; }
+
+        /* Container */
+        .container { width: 85%; max-width: 900px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #1a252f; padding-bottom: 5px; color: #1a252f; }
+        
+        /* Services */
+        .services { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
+        .card { background: #eef2f5; padding: 1.5rem; border-radius: 5px; flex: 1; min-width: 200px; text-align: center; }
+
+        /* Contact Details Section */
+        .contact-info { margin-top: 1.5rem; background: #f8f9fa; padding: 1.5rem; border-left: 4px solid #1a252f; border-radius: 4px; }
+        .contact-item { margin-bottom: 10px; font-size: 1.1rem; }
+        .contact-item strong { color: #1a252f; }
+        
+        /* Buttons */
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
         footer { text-align: center; padding: 1rem; background: #1a252f; color: white; margin-top: 2rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>MechaTech India</h1>
-        <p>Mechanical & Industrial Equipment Solutions</p>
+        <!-- Logo Image: Replace logo.png with your logo file name -->
+        <img src="logo.png" alt="MechaTech India Logo">
+        <div class="title-text">
+            <h1>MechaTech India</h1>
+            <p>Mechanical & Industrial Equipment Solutions</p>
+        </div>
     </header>
 
     <div class="container">
@@ -39,7 +83,14 @@
         </div>
 
         <h2>Contact Us</h2>
-        <p>Email: contact@mechatechindia.com</p>
+        <div class="contact-info">
+            <div class="contact-item"><strong>📍 Address:</strong> MechaTech India, Industrial Estate, Tamil Nadu, India</div>
+            <div class="contact-item"><strong>📞 Phone:</strong> +91 98765 43210</div>
+            <div class="contact-item"><strong>✉️ Email:</strong> info@mechatechindia.com</div>
+            <br>
+            <!-- Replace 919876543210 with your actual WhatsApp phone number with country code -->
+            <a href="https://wa.me/919876543210" target="_blank" class="btn-whatsapp">💬 Chat on WhatsApp</a>
+        </div>
     </div>
 
     <footer>
